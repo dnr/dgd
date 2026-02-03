@@ -1,0 +1,32 @@
+
+move binary to /bin   (wait until we support multiple bins?)
+
+test for differential builds
+
+try building something big like styx
+
+support building tests
+
+support running tests
+
+support multiple binary targets? do we need this?
+
+support private git repos, etc. in modpkg
+  put cacert and gitMinimal in modpkg derivation
+
+support other options supported by buildGoModule to make it compatible
+  name/pname/version
+  ldflags!
+  modRoot
+  passthru
+  nativeBuildInputs
+  allowGoReference
+  meta
+  GOFLAGS
+  buildTestBinaries
+
+do various hooks that stdenv does (strip? patchelf?)
+
+optimize
+  use perf to find out why it's slow
+
